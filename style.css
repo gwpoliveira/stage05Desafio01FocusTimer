@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-body:#ffffff;
+  --tc-color:rgb(8, 1, 1);
+  --ff-fonte:'Roboto', sans-serif;
+  
+  font-size: 62.5%;  
+  
+}
+
+
+body{
+  min-height: 100vh;
+  background-image: url("images/hd-wallpaper-176722.jpg");
+  
+  display: grid;
+  justify-items: center;
+  
+}
+
+.separy{
+  display: flex;
+  align-self:end;
+  justify-self: center;
+ 
+}
+.timeControls{
+  align-self:end;
+  justify-self: center;
+  
+}
+  
+.time{
+  display: flex;
+  font-size: 12.6rem;
+  font-family: var(--ff-fonte);
+  color: var(--tc-color);  
+  
+}
+.controls{
+  
+  display: flex;
+  align-self:end;
+  justify-self:center;
+  padding: 4rem 0;
+  gap: 4rem;
+  border-radius: 9999px;
+    
+}
+
+.cards{
+  display: grid;
+  align-self: center;
+  justify-self: center;
+
+  margin-left: 19.2rem;
+  margin-top: 19.2rem;
+
+  grid-template-areas: "a b" "c d";
+  gap: 3.2rem; 
+  
+}
+
+.play,.pause,.stop, .menos, .mais, .card01, .card02, .card03, .card04 {
+  border:none;   
+  background-color: transparent;
+  cursor: pointer;
+  }
+
+  .stop svg path,
+  .pause svg path,
+  .play svg path
+  {
+    fill: #323238;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .play,.pause,.stop, .menos, .mais{
+    border-radius: 99999px;
+    
+  }
+
+
+
+
